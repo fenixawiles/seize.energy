@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Seize Energy</title>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="close-btn" onclick="toggleSidebar()">×</div>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="socials.html">Socials</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+    <div class="site-title">Seize Energy</div>
+    <div class="logo-wrapper">
+      <img src="seizelogo.png" alt="Seize Energy Logo" class="logo-image" />
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Product Image -->
+    <img src="siezecan.jpg" alt="Seize Can" class="product-image" />
+
+    <!-- Tagline -->
+    <section class="tagline">
+      <p>Unleash your edge. Fuel intensity, not anxiety.</p>
+    </section>
+
+    <!-- Ethos -->
+    <h2>Ethos</h2>
+
+    <!-- Product Highlights -->
+    <section class="highlights">
+      <div class="highlight">Zero Crash</div>
+      <div class="highlight">Natural Caffeine</div>
+      <div class="highlight">Zero Sugar</div>
+      <div class="highlight">Vegan Friendly</div>
+    </section>
+
+    <!-- Flavor Lineup -->
+    <section class="flavors">
+      <h2>Flavors</h2>
+      <div class="flavor-grid">
+        <div class="flavor-card">Ember Berry</div>
+        <div class="flavor-card">Midnight Voltage</div>
+        <div class="flavor-card">Citrus Surge</div>
+        <div class="flavor-card">Frostbyte Mint</div>
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison">
+      <h2>What Makes Us Different</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Seize Energy</th>
+            <th>Big Brand X</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Crash-Free</td><td>✅</td><td>❌</td></tr>
+          <tr><td>Clean Ingredients</td><td>✅</td><td>❌</td></tr>
+          <tr><td>Empowering Brand</td><td>✅</td><td>❌</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <h2>Ready to Seize Control?</h2>
+      <button>Join the Movement</button>
+    </section>
+
+    <!-- Email Signup -->
+    <section class="email-signup">
+      <p>Be the first to know when we launch.</p>
+      <input type="email" placeholder="Your email" />
+      <button>Notify Me</button>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
